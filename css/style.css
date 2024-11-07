@@ -1,0 +1,250 @@
+*,::before,::after{ margin: 0; box-sizing: border-box;}
+a{ text-decoration: none;}
+img{ vertical-align: bottom;}
+button{ padding: 0; cursor: pointer;}
+:disabled{ cursor:not-allowed;}
+ul{ list-style: none; padding: 0;}
+
+@font-face {
+    font-family: proxima;
+    src: url(../fonts/proximanova-regular.woff2);
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: proxima;
+    src: url(../fonts/proximanova-bold.woff2);
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: proxima;
+    src: url(../fonts/Proxima-Nova-Thin-webfont.woff2);
+    font-weight: 100;
+    font-display: swap;
+}
+
+html{
+    font-size: 15px;
+    --red:#ca3c3c;
+    --ff: proxima, sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+body{
+    font: 16px/1.2 var(--ff);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -1rem;
+}
+
+[class^="col-"]{ flex: 1 0 auto; padding: 0 1rem;}
+.col-1{ flex-basis: 8.33%; max-width: 8.33%;}
+.col-2{ flex-basis: 16.66%; max-width: 16.66%;}
+.col-3{ flex-basis: 25%; max-width: 25%;}
+.col-4{ flex-basis: 33.33%; max-width: 33.33%;}
+.col-5{ flex-basis: 41.66%; max-width: 41.66%;}
+.col-6{ flex-basis: 50%; max-width: 50%;}
+.col-7{ flex-basis: 58.33%; max-width: 58.33%;}
+.col-8{ flex-basis: 66.66%; max-width: 66.66%;}
+.col-9{ flex-basis: 75%; max-width: 75%;}
+.col-10{ flex-basis: 83.33%; max-width: 83.33%;}
+.col-11{ flex-basis: 91.66%; max-width: 91.66%;}
+.col-12{ flex-basis: 100%; max-width: 100%;}
+.flex{ display: flex;}
+.align-center{ align-items: center;}
+.justify-right{float: right; }
+
+/* custom css */
+
+
+header{background:#f2f2f2; line-height: 50px;}
+
+header .fa-brands{font-size: 20px;color: #1c1c50;cursor: pointer;padding: 3px;}
+header .right{float: right;}
+header a{border-color: #1c1c50;padding:  5px;width: 80px;  font-weight: bold; border-radius: 5px; color: #1c1c50;font-size: 15px;}
+header .fa-solid{margin-left: 10px;font-size: 20px;color: #1c1c50;cursor: pointer;}
+header button:hover{background: #1c1c50;color: white;}
+.wrap-1{background: #232f3e;}
+.wrap-1 a  img{max-width: 100%; height: auto;vertical-align: middle;margin-top: 1rem;}
+.wrap-1 nav {vertical-align: middle;}
+.wrap-1 nav li{padding: 10px;}
+.wrap-1 a{color: #fff;line-height: 50px;}
+.wrap-1 .search{height: 30px; border-radius: 5px; color: #1c1c50;margin-left: 20px;padding-left: 10px;}
+.wrap-1 .search:hover{border-color: blue;}
+.btn1{background:transparent;border-color: #fff; color: #fff;height: 30px;margin-left: 3px;}
+.btn1:hover{transition: 5s; border-color: blue}
+
+.wrap-1 a:hover{color:darkcyan;font-weight: bold;}
+.banner img{max-width: 100%;height: auto;}
+.men .menproduct img{max-width: 100%;height: auto;}
+.men .menproduct{margin-top: 40px;}
+.men figcaption{text-align: center;}
+.dress .product{margin-top: 50px;}
+
+.dress .product img{max-width: 100%; height: auto;}
+.contact .about img{max-width: 100%; height: auto;}
+
+.contact .about{margin-top: 40px;}
+.shop {margin-top: 40px;}
+.shop h2{text-align: center;margin-top: 20px;}
+.shop .occasion {margin-top: 20px;}
+.shop nav { text-align: center;}
+.shop nav a{  border-bottom: 3px solid transparent; color: darkgrey;}
+.shop nav a.active{ border-block-color: black;color: #1c1c50;}
+.lst{text-align: center;}
+
+.shop a{padding: 10px;}
+.shop .product1{margin-top: 30px; position: relative;}
+.shop .product1 img{max-width: 100%; height: auto;margin-left: -10px; }
+
+.fa-regular{position: absolute; margin-top: -355px;margin-left: 10px;font-size: 20px;color: #ca3c3c;}
+.shop p{margin-top: 10px; font-size: 15px;}
+.shop span{margin-top: 15px; font-size: 13px;}
+.shop span b{color: darkred;}
+.customer{margin-top: 60px;}
+.customer .feed img{max-width: 100%; height: auto;}
+
+
+.customer h3{text-align: center;margin-top: 200px;color: darkgray;}
+.customer p{margin-top: 10px;}
+.outfit h2{margin-top: 50px; text-align: center;}
+
+.outfit .fits img{max-width: 100%; height: auto; margin-top: 20px;}
+.outfit p{text-align: justify; margin-top: 10px;}
+.outfit h3{margin-top: 10px;color: darkslategrey;}
+footer{margin-top: 50px;background: #1c1c50;;}
+footer h3{margin-top: 20px;color: white;}
+footer ul{margin-top: 20px;}
+footer li{padding: 10px 0 0 0;}
+footer a{color: #fff;font-size: 15px;}
+footer .con span{color: #fff;}
+footer h4{color: #fff;margin-top: 15px;}
+footer p{margin-top: 10px; color: #fff;}
+
+.login{background:#fff; height: 400px;text-align: 
+    center;margin-top: 80px;}
+.login p{margin-top: 10px;}
+.login input{margin-top: 30px; width: 40%; height: 50px;}
+ .log1{margin-top: 30px;width: 40%;height: 50px;}
+
+.login span{margin-top: 10px; padding: 5px;}
+
+
+.register{background:#fff; height: 500px;text-align: 
+    center;margin-top: 80px;}
+.register p{margin-top: 10px;}
+.register input{margin-top: 30px; width: 40%; height: 50px;}
+ 
+
+
+
+
+
+
+  /* responsive s*/
+  @media screen and (max-width:1220px){
+    html{ font-size: 13px;}
+    .customer h3{text-align: center;margin-top: 150px;color: darkgray;}
+
+
+}
+ @media screen and (max-width:980px){
+     .col-t-none{ display: none; }
+     .col-t-1{ flex-basis: 8.33%; max-width: 8.33%;}
+     .col-t-2{ flex-basis: 16.66%; max-width: 16.66%;}
+     .col-t-3{ flex-basis: 25%; max-width: 25%;}
+     .col-t-4{ flex-basis: 33.33%; max-width: 33.33%;}
+     .col-t-5{ flex-basis: 41.66%; max-width: 41.66%;}
+     .col-t-6{ flex-basis: 50%; max-width: 50%;}
+     .col-t-7{ flex-basis: 58.33%; max-width: 58.33%;}
+     .col-t-8{ flex-basis: 66.66%; max-width: 66.66%;}
+     .col-t-9{ flex-basis: 75%; max-width: 75%;}
+     .col-t-10{ flex-basis: 83.33%; max-width: 83.33%;}
+     .col-t-11{ flex-basis: 91.66%; max-width: 91.66%;}
+     .col-t-12{ flex-basis: 100%; max-width: 100%;}
+     .fa-regular{position: absolute; margin-top: -285px;margin-left: 10px;font-size: 20px;color: #ca3c3c;}
+
+
+ }
+ 
+
+ @media screen and (max-width:767px){
+     html{ font-size: 12px;}
+     .col-m-6{ flex-basis: 50%; max-width: 50%;}
+     .col-m-12{ flex-basis: 100%; max-width: 100%;}     
+     .wrap-1 img{max-width: 150%; height: auto;vertical-align: middle;}
+.collapse{display: none;}
+.wrap-1 .search{height: 30px; margin-top: 10px; border-radius: 5px; color: #1c1c50;}
+.btn1{background:transparent;border-color: #fff; color: #fff;height: 30px;margin-left: 3px;margin-top: 10px;}
+.wrap-1 a  img{max-width: 150%; height: auto;vertical-align: middle;margin-top: 5px}
+
+.fa-regular{position: absolute; margin-top: -475px;margin-left: 10px;font-size: 20px;color: #ca3c3c;}
+.customer h3{text-align: center;margin-top: 100px;color: darkgray;}
+.customer p{margin-bottom: 20px;}
+.login input{margin-top: 30px; width: 60%; height: 50px;}
+.log1{margin-top: 30px;width: 60%;height: 50px;}
+.register input{margin-top: 30px; width: 90%; height: 50px;}
+
+
+
+    }
+ @media screen and (max-width:480px){
+     .col-p-1{ flex-basis: 8.33%; max-width: 8.33%;}
+     .col-p-2{ flex-basis: 16.66%; max-width: 16.66%;}
+     .col-p-3{ flex-basis: 25%; max-width: 25%;}
+     .col-p-4{ flex-basis: 33.33%; max-width: 33.33%;}
+     .col-p-5{ flex-basis: 41.66%; max-width: 41.66%;}
+     .col-p-6{ flex-basis: 50%; max-width: 50%;}
+     .col-p-7{ flex-basis: 58.33%; max-width: 58.33%;}
+     .col-p-8{ flex-basis: 66.66%; max-width: 66.66%;}
+     .col-p-9{ flex-basis: 75%; max-width: 75%;}
+     .col-p-10{ flex-basis: 83.33%; max-width: 83.33%;}
+     .col-p-11{ flex-basis: 91.66%; max-width: 91.66%;}
+     .col-p-12{ flex-basis: 100%; max-width: 100%;}
+     .wrap-1 .search{height: 30px; margin-top: 10px; border-radius: 5px; color: #1c1c50;width: 130px;}
+     .btn1{background:transparent;border-color: #fff; color: #fff;height: 30px;margin-left: 3px;margin-top: 10px;}
+     .wrap-1 a  img{max-width: 250%; height: auto;vertical-align: middle;}
+     .fa-regular{position: absolute; margin-top: -600px;margin-left: 10px;font-size: 20px;color: #ca3c3c;}
+     .customer h3{text-align: center;margin-top: -20px;color: darkgray;}
+     .customer p{margin-bottom: 20px;}
+     .login input{margin-top: 30px; width: 90%; height: 50px;}
+     .log1{margin-top: 30px;width: 90%;height: 50px;}
+          
+      }
+
+
+      @media screen and (max-width:360px){
+        .col-p-1{ flex-basis: 8.33%; max-width: 8.33%;}
+        .col-p-2{ flex-basis: 16.66%; max-width: 16.66%;}
+        .col-p-3{ flex-basis: 25%; max-width: 25%;}
+        .col-p-4{ flex-basis: 33.33%; max-width: 33.33%;}
+        .col-p-5{ flex-basis: 41.66%; max-width: 41.66%;}
+        .col-p-6{ flex-basis: 50%; max-width: 50%;}
+        .col-p-7{ flex-basis: 58.33%; max-width: 58.33%;}
+        .col-p-8{ flex-basis: 66.66%; max-width: 66.66%;}
+        .col-p-9{ flex-basis: 75%; max-width: 75%;}
+        .col-p-10{ flex-basis: 83.33%; max-width: 83.33%;}
+        .col-p-11{ flex-basis: 91.66%; max-width: 91.66%;}
+        .col-p-12{ flex-basis: 100%; max-width: 100%;}
+        .wrap-1 .search{height: 30px; margin-top: 10px; border-radius: 5px; color: #1c1c50;width: 130px;}
+        .btn1{background:transparent;border-color: #fff; color: #fff;height: 30px;margin-left: 3px;margin-top: 10px;}
+        .wrap-1 a  img{max-width: 250%; height: auto;vertical-align: middle;}
+        .fa-regular{position: absolute; margin-top: -600px;margin-left: 10px;font-size: 20px;color: #ca3c3c;}
+        .customer h3{text-align: center;margin-top: -20px;color: darkgray;}
+        .customer p{margin-bottom: 20px;}
+        .login input{margin-top: 30px; width: 90%; height: 50px;}
+        .log1{margin-top: 30px;width: 90%;height: 50px;}
+        header .fa-brands{font-size: 13px;color: #1c1c50;cursor: pointer;padding: 3px;}
+        header .fa-solid{margin-left: 10px;font-size: 13px;color: #1c1c50;cursor: pointer;}
+       
+         }
+   
